@@ -14,7 +14,7 @@ class AddMovieController
     function routeManage(){
 
         if(isset($_POST['name']) && !empty($_POST['name'])){
-            $this->model->addMovie($_POST['name'],$_POST['url'],$_POST['date']);
+            $this->model->addMovie($_POST['name'],$_POST['url'],$_POST['date'], $_POST['category']);
         }
 
         include (__DIR__ . "./../view/addMovie.php");

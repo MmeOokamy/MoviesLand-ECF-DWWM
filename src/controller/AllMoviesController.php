@@ -14,9 +14,10 @@ class AllMoviesController
         $this->model = new Model();
     }
 
-    function routeManage(){
-        $this->moviesList = $this->model->allMovies();
+    function routeManage()
+    {
 
+        $this->moviesList = $this->model->allMovies();
         include (__DIR__ . "./../view/allMovies.php");
 
     }
