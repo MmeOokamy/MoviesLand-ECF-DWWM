@@ -3,6 +3,7 @@
     require 'src/controller/AddMovieController.php';
     require 'src/controller/AllMoviesController.php';
     require 'src/controller/SearchMovieController.php';
+    require 'src/controller/CatController.php';
     require 'src/model/Model.php';
     require 'src/data/DatabaseHandler.php';
 
@@ -12,7 +13,8 @@
         'home' => HomeController::class,
         'movies' => AllMoviesController::class,
         'addmovie' => AddMovieController::class,
-        'searchMovie' => SearchMovieController::class
+        'searchMovie' => SearchMovieController::class,
+        'cat' => CatController::class
     ];
 
     foreach ($routeMapping as $routeValue => $className){

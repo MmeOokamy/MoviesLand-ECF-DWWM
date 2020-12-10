@@ -1,18 +1,17 @@
 <?php include(__DIR__ . "./../template/header.php"); ?>
-<div class="columns">
+<div class="row row-cols-1 row-cols-md-4">
+
     <?php foreach ($this->moviesList as $movie): ?>
+    <div class="col mb-4">
+        <div class="card">
+            <img src="<?= $movie['movies_url'] ?>" class="card-img-top" alt="<?= $movie['movies_name'] ?>">
+            <div class="card-body">
+                <h5 class="card-title"><?= $movie['movies_name'] ?></h5>
 
-
-        <div class="column card">
-
-            <div class="card-image"><img src="<?= $movie['movies_url'] ?>" alt="<?= $movie['movies_name'] ?>"></div>
-            <div class="card_content"><h3><?= $movie['movies_name'] ?></h3></div>
-
-
+            </div>
         </div>
-
-
+    </div>
     <?php endforeach; ?>
-</div>
 
+</div>
 <?php include(__DIR__ . "./../template/footer.php"); ?>
