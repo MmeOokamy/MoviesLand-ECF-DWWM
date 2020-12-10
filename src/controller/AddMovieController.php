@@ -5,6 +5,7 @@ class AddMovieController
 {
     private $title;
     private $model;
+
     public function __construct()
     {
         $this->title = "Ajouter une annonce";

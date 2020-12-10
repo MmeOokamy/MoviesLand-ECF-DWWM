@@ -6,7 +6,7 @@ class HomeController
 
     public function __construct()
     {
-        $this->title = "Mon appli qui déchire pour répertorier mes films!";
+        $this->title = "Ma base de Données de Film!";
     }
 
     function routeManage(){

@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c06a458-ee48-43bc-8ff1-8838465b4e57" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/controller/CatController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/AddCatController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/addcat.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/Api.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/cat.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/AddMovieController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/AddMovieController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/js/js.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/js/js.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/template/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/allMovies.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/allMovies.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/search.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/cat.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/cat.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +65,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607587470969</updated>
-      <workItem from="1607587473449" duration="28614000" />
+      <workItem from="1607587473449" duration="30302000" />
     </task>
     <servers />
   </component>

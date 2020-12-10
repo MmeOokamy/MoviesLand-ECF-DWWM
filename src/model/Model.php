@@ -72,7 +72,7 @@ class Model
         try {
 
             $request = $this->handle->prepare('
-            INSERT INTO `category`(`category_id`) 
+            INSERT INTO `category`(`category_name`) 
             VALUES (?)');
 
             $request->execute([

@@ -4,6 +4,7 @@
     require 'src/controller/AllMoviesController.php';
     require 'src/controller/SearchMovieController.php';
     require 'src/controller/CatController.php';
+    require 'src/controller/AddCatController.php';
     require 'src/model/Model.php';
     require 'src/data/DatabaseHandler.php';
 
@@ -14,7 +15,8 @@
         'movies' => AllMoviesController::class,
         'addmovie' => AddMovieController::class,
         'searchMovie' => SearchMovieController::class,
-        'cat' => CatController::class
+        'cat' => CatController::class,
+        'addcat' => AddCatController::class
     ];
 
     foreach ($routeMapping as $routeValue => $className){

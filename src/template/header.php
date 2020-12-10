@@ -35,6 +35,9 @@
                 <a class="navbar-item" href="?page=cat">
                     Category
                 </a>
+                <a class="navbar-item" href="?page=addcat">
+                    Ajout Category
+                </a>
 
             </div>
         </div>

@@ -2,7 +2,7 @@
 <div class="row row-cols-1 row-cols-md-4">
 
     <?php foreach ($this->catList as $cat): ?>
-        <?= $cat['category_name'] ?>
+        <button type="button" class="btn btn-info"><?= $cat['category_name'] ?></button>
     <?php endforeach; ?>
 
 </div>
