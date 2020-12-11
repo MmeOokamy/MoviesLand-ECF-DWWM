@@ -1,4 +1,6 @@
 <?php include(__DIR__ . "./../template/header.php"); ?>
+
+<?= $alerte;?>
 <div class="row row-cols-1 row-cols-md-4">
 
     <?php foreach ($this->moviesList as $movie): ?>

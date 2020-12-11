@@ -29,15 +29,18 @@
     </div>
 
     <div class="form-group">
-        <!--   <div class="control">
+
+        <div class="control">
                 <?php foreach ($this->catList as $cat): ?>
-                    <label for="category">
-                        <input class="input is-info" type="radio" name="category" id="category" value="<?= $cat['category_id'] ?>" required><?= $cat['category_name'] ?>
+
+                    <label class="button is-info is-light" for="category" >
+                        <input type="radio" name="category" id="category" value="<?= $cat['category_id'] ?>" required><?= $cat['category_name'] ?>
                     </label>
+
                 <?php endforeach; ?>
-            </div>-->
-         <label for="category">Catégorie</label>
-          <input class="input is-info" type="text" name="category" id="category" placeholder="1 nanar - 2 action - 3 - 4">
+    </div>
+          <!--   <label for="category">Catégorie</label>
+          <input class="input is-info" type="text" name="category" id="category" placeholder="1 nanar - 2 action - 3 - 4">-->
     </div>
 
 
