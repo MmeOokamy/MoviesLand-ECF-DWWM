@@ -14,7 +14,7 @@ class Model
     public function allMovies()
     {
         try {
-            $request = $this->handle->prepare('SELECT * FROM `movies`');
+            $request = $this->handle->prepare('SELECT * FROM movies LEFT JOIN category ON category.category_id = movies.id_category');
             $request->execute();
             return $request->fetchAll();
 
@@ -87,6 +87,54 @@ class Model
 
         }
     }
+
+    public function getCategory(int $id)
+    {
+
+        try {
+            //Créer une méthode dans le model permettant la récupération des annonces
+            $request = $this->handle->prepare('SELECT * FROM `category` WHERE `category_id`= :id');
+            $request->execute([':id' => $id]);
+
+            return $request->fetch();
+
+        } catch (PDOException $e) {
+            var_dump('erreur lors de la requête sql :' . $e->getMessage());
+            die();
+        }
+    }
+
+    public function getMovie(int $id)
+    {
+
+        try {
+
+            $request = $this->handle->prepare('SELECT * FROM `movies` WHERE `movies_id`= :id');
+            $request->execute([':id' => $id]);
+
+            return $request->fetch();
+
+        } catch (PDOException $e) {
+            var_dump('erreur lors de la requête sql :' . $e->getMessage());
+            die();
+        }
+    }
+    public function deleteMovie(int $id)
+    {
+
+        try {
+
+            $request = $this->handle->prepare('DELETE FROM `movies` WHERE `movies_id`= :id');
+            $request->execute([':id' => $id]);
+
+            return true;
+
+        } catch (PDOException $e) {
+            var_dump('erreur lors de la requête sql :' . $e->getMessage());
+            die();
+        }
+    }
+
 
 
 }

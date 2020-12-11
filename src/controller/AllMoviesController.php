@@ -7,7 +7,9 @@ class AllMoviesController
     private $title;
     private $model;
     private $moviesList;
-    private $alerte;
+    private $cat;
+
+
 
     public function __construct()
     {
@@ -19,6 +21,8 @@ class AllMoviesController
     {
 
         $this->moviesList = $this->model->allMovies();
+
+
         if($this->moviesList === false) {
             $alerte = '<div class="alert alert-danger mt-5">Il y a un problème!</div>';
         } elseif (count($this->moviesList) === 0 ){

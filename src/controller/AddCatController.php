@@ -5,7 +5,7 @@ class AddCatController
 {
     private $title;
     private $model;
-    private $alerte;
+
 
     public function __construct()
     {

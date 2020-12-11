@@ -9,6 +9,7 @@
             <img src="<?= $movie['movies_url'] ?>" class="card-img-top" alt="<?= $movie['movies_name'] ?>">
             <div class="card-body">
                 <h5 class="card-title"><?= $movie['movies_name'] ?></h5>
+                <h6 class="card-title"><?= $movie['category_name'] ?></h6>
 
             </div>
         </div>

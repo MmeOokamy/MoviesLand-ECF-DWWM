@@ -12,7 +12,7 @@ if ($request === true) {
 }
 }
 
-
+catById($movie['id_category'])['category_name']
 /**
  *
  *

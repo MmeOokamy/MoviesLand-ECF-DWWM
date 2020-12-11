@@ -6,7 +6,7 @@ class AddMovieController
     private $title;
     private $model;
     private $catList;
-    private $alerte;
+
 
 
     public function __construct()
