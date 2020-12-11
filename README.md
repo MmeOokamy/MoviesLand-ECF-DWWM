@@ -12,3 +12,5 @@ nouveaux films grâce à une api.</p>
 * Pour le style, l’utilisation d’un framework tel que Bootstrap est autorisée. Le
 CSS n'étant pas la priorité pour cet examen, il est conseillé de laisser cela
 pour la fin.</p>
+
+## Resultat de la branche correction -> https://ooka.planethoster.world/ecf/
