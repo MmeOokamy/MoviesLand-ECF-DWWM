@@ -3,6 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="3c06a458-ee48-43bc-8ff1-8838465b4e57" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/AddCatController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/AddCatController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/AddMovieController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/AddMovieController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/addMovie.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/addMovie.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/addcat.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/addcat.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/cat.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/cat.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/home.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +67,7 @@
       <workItem from="1607587473449" duration="30375000" />
       <workItem from="1607620304645" duration="1532000" />
       <workItem from="1607671270810" duration="19000" />
+      <workItem from="1607674107066" duration="7472000" />
     </task>
     <servers />
   </component>

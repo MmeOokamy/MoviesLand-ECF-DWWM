@@ -1,7 +1,11 @@
 <?php include(__DIR__ . "./../template/header.php"); ?>
 
-
+<?php if(isset($alerte)){
+    echo $alerte;
+}
+?>
 <div class="row row-cols-1 row-cols-md-4">
+
 
 
     <form action="?page=addcat" method="post">

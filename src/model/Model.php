@@ -40,15 +40,14 @@ class Model
                 $date,
                 $category
             ]);
+            return true;
 
-            echo'<div class="alert alert-success mt-5">
-            Votre film a été sauvegardé !</div>';
 
 
         } catch (PDOException $e){
+            var_dump('erreur lors de la requête sql :' . $e->getMessage());
+            return false;
 
-            echo'<div class="alert alert-warning mt-5">
-            Votre film n\'a pas été sauvegardé !</div>';
 
         }
     }
@@ -78,15 +77,13 @@ class Model
             $request->execute([
                 $category
             ]);
-
-            echo'<div class="alert alert-success mt-5">
-            Votre catégorie a été sauvegardé !</div>';
+            return true;
 
 
         } catch (PDOException $e){
+            var_dump('erreur lors de la requête sql :' . $e->getMessage());
+            return false;
 
-            echo'<div class="alert alert-warning mt-5">
-            Votre catégorie n\'a pas été sauvegardé !</div>';
 
         }
     }
