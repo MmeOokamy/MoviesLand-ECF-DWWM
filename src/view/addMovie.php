@@ -4,7 +4,7 @@
 
 <h2>Remplis moi de film !</h2>
 
-<?php if(isset($alerte)){
+<?php if (isset($alerte)) {
     echo $alerte;
 }
 ?>
@@ -28,19 +28,17 @@
         <input class="input is-info" name="date" id="date" type="number" placeholder="" required>
     </div>
 
-    <div class="form-group">
+    <div class="form-check form-check-inline">
 
-        <div class="control">
-                <?php foreach ($this->catList as $cat): ?>
 
-                    <label class="button is-info is-light" for="category" >
-                        <input type="radio" name="category" id="category" value="<?= $cat['category_id'] ?>" required><?= $cat['category_name'] ?>
-                    </label>
 
-                <?php endforeach; ?>
-    </div>
-          <!--   <label for="category">Catégorie</label>
-          <input class="input is-info" type="text" name="category" id="category" placeholder="1 nanar - 2 action - 3 - 4">-->
+            <?php foreach ($this->catList as $cat): ?>
+              <!--  https://codepen.io/lefourbefromage/pen/KKKVjKV -->
+                        <input class="" type="radio" name="category" value="<?= $cat['category_id'] ?>" id="category" required >
+                        <label for="category"><?= $cat['category_name'] ?></label>
+
+            <?php endforeach; ?>
+
     </div>
 
 
