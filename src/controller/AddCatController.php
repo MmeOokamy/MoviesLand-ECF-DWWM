@@ -6,6 +6,7 @@ class AddCatController
     private $title;
     private $model;
 
+
     public function __construct()
     {
         $this->title = "Ajouter une categorie";
@@ -16,8 +17,17 @@ class AddCatController
     {
 
         if (isset($_POST['name']) && !empty($_POST['name'])) {
-            $this->model->addCat($_POST['name']);
+           $request = $this->model->addCat($_POST['name']);
+
+            if($request === true){
+                $alerte = '<div class="alert alert-success mt-5">
+            Votre catégorie a été sauvegardé !</div>';
+            } else {
+                $alerte = '<div class="alert alert-warning mt-5">
+            Votre catégorie n\'a pas été sauvegardé !</div>';
+            }
         }
+
 
         include(__DIR__ . "./../view/addcat.php");
     }

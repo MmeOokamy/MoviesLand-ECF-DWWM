@@ -3,20 +3,11 @@
 ?>
 
 <h2>Remplis moi de film !</h2>
-<?php if (isset($success)): ?>
-    <?php if ($success === true): ?>
 
-        <div class="alert alert-success mt-5">
-            Votre film a été sauvegardé avec succes !
-        </div>
-    <?php else: ?>
-        <div class="alert alert-warning mt-5">
-            Votre film n'a pas été sauvegardé !
-        </div>
-
-    <?php endif; ?>
-<?php endif; ?>
-
+<?php if (isset($alerte)) {
+    echo $alerte;
+}
+?>
 
 <form action="?page=addmovie" method="post">
 
@@ -34,13 +25,22 @@
 
     <div class="form-group">
         <label for="date">Date du film</label>
-        <input class="input is-info" name="date" id="date" type="text" placeholder="" required>
+        <input class="input is-info" name="date" id="date" type="number" placeholder="" required>
     </div>
 
-    <div class="form-group">
-        <label for="category">Catégorie</label>
-        <input class="input is-info" type="text" name="category" id="category" placeholder="Nanar pour 1">
+    <div class="form-check form-check-inline">
+
+
+
+            <?php foreach ($this->catList as $cat): ?>
+              <!--  https://codepen.io/lefourbefromage/pen/KKKVjKV -->
+                        <input class="" type="radio" name="category" value="<?= $cat['category_id'] ?>" id="category" required >
+                        <label for="category"><?= $cat['category_name'] ?></label>
+
+            <?php endforeach; ?>
+
     </div>
+
 
     <div class="mt-5 ">
         <input type="hidden">

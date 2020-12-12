@@ -12,6 +12,12 @@ class DatabaseHandler
         $user = "root";
         $mdp = "";
         $databaseName = "movies_land";
+/*
+        $host = "localhost";
+        $user = "ookadnzb_ooka";
+        $mdp = "jesuisunechaussette";
+        $databaseName = "ookadnzb_ooka_land";*/
+
         try {
             $this->handle = new PDO(
                 "mysql:host=$host;dbname=$databaseName;charset=utf8",
