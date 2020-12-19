@@ -109,7 +109,7 @@ class Model
 
         try {
 
-            $request = $this->handle->prepare('SELECT * FROM `movies` WHERE `movies_id`= :id');
+            $request = $this->handle->prepare('SELECT * FROM movies LEFT JOIN category ON category.category_id = movies.id_category WHERE movies_id= :id ');
             $request->execute([':id' => $id]);
 
             return $request->fetch();

@@ -12,8 +12,8 @@ class DatabaseHandler
         $user = "root";
         $mdp = "";
         $databaseName = "movies_land";
-/*
-        $host = "localhost";
+
+      /*  $host = "localhost";
         $user = "ookadnzb_ooka";
         $mdp = "jesuisunechaussette";
         $databaseName = "ookadnzb_ooka_land";*/

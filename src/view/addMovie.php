@@ -27,21 +27,16 @@
         <label for="date">Date du film</label>
         <input class="input is-info" name="date" id="date" type="number" placeholder="" required>
     </div>
+    <div class="form-group">
+        <?php foreach ($this->catList as $cat): ?>
+        <label class="ooka-margin button is-success is-outlined">
+                <input class="" type="radio" name="category" value="<?= $cat['category_id'] ?>">
+            <?= $cat['category_name'] ?>
+        </label>
 
-    <div class="form-check form-check-inline">
 
-
-
-            <?php foreach ($this->catList as $cat): ?>
-              <!--  https://codepen.io/lefourbefromage/pen/KKKVjKV -->
-                        <input class="" type="radio" name="category" value="<?= $cat['category_id'] ?>" id="category" required >
-                        <label for="category"><?= $cat['category_name'] ?></label>
-
-            <?php endforeach; ?>
-
+        <?php endforeach; ?>
     </div>
-
-
     <div class="mt-5 ">
         <input type="hidden">
         <button type="submit" class="button is-primary is-normal is-outlined">Ajouter</button>
