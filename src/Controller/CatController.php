@@ -15,7 +15,7 @@ class CatController
 
     function routeManage(){
         $this->catList = $this->model->allCat();
-        include (__DIR__ . "./../view/cat.php");
+        include (__DIR__ . "./../Views/cat.php");
     }
 
 }

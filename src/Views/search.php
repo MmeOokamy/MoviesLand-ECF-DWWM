@@ -1,4 +1,4 @@
-<?php include(__DIR__ . "./../template/header.php"); ?>
+<?php include(__DIR__ . "./../Templates/header.php"); ?>
 
 <?php echo '<div  class="active-purple-3 active-purple-4 mb-4"> 
             <div>
@@ -13,4 +13,4 @@
 <?php echo '</div>'; ?>
 
 
-<?php include(__DIR__ . "./../template/footer.php"); ?>
+<?php include(__DIR__ . "./../Templates/footer.php"); ?>

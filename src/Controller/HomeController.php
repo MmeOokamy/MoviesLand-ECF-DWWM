@@ -10,6 +10,6 @@ class HomeController
     }
 
     function routeManage(){
-        include (__DIR__ . "./../view/home.php");
+        include (__DIR__ . "./../Views/home.php");
     }
 }

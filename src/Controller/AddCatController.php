@@ -29,6 +29,6 @@ class AddCatController
         }
 
 
-        include(__DIR__ . "./../view/addcat.php");
+        include(__DIR__ . "./../Views/addcat.php");
     }
 }

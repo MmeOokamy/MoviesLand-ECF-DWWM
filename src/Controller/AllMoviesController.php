@@ -33,7 +33,7 @@ class AllMoviesController
         }
 
 
-        include (__DIR__ . "./../view/allMovies.php");
+        include (__DIR__ . "./../Views/allMovies.php");
 
     }
 }

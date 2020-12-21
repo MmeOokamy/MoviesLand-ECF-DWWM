@@ -32,6 +32,6 @@ class AddMovieController
         }
 
 
-        include(__DIR__ . "./../view/addMovie.php");
+        include(__DIR__ . "./../Views/addMovie.php");
     }
 }

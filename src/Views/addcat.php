@@ -1,4 +1,4 @@
-<?php include(__DIR__ . "./../template/header.php"); ?>
+<?php include(__DIR__ . "./../Templates/header.php"); ?>
 
 <?php if(isset($alerte)){
     echo $alerte;
@@ -22,4 +22,4 @@
 
     </form>
 </div>
-<?php include(__DIR__ . "./../template/footer.php"); ?>
+<?php include(__DIR__ . "./../Templates/footer.php"); ?>

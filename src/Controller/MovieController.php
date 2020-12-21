@@ -22,7 +22,7 @@ class MovieController
 
         $this->movie = $this->model->getMovie($_GET['id']);
 
-        include (__DIR__ . "./../view/movie.php");
+        include (__DIR__ . "./../Views/movie.php");
 
     }
 }

@@ -17,7 +17,7 @@ class SearchMovieController
     function routeManage()
     {
 
-        include (__DIR__ . "./../view/search.php");
+        include (__DIR__ . "./../Views/search.php");
 
     }
 }

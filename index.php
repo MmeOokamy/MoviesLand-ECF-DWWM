@@ -1,13 +1,13 @@
 <?php
-    require 'src/controller/HomeController.php';
-    require 'src/controller/AddMovieController.php';
-    require 'src/controller/AllMoviesController.php';
-    require 'src/controller/SearchMovieController.php';
-    require 'src/controller/CatController.php';
-    require 'src/controller/AddCatController.php';
-    require 'src/controller/MovieController.php';
-    require 'src/model/Model.php';
-    require 'src/data/DatabaseHandler.php';
+    require 'src/Controller/HomeController.php';
+    require 'src/Controller/AddMovieController.php';
+    require 'src/Controller/AllMoviesController.php';
+    require 'src/Controller/SearchMovieController.php';
+    require 'src/Controller/CatController.php';
+    require 'src/Controller/AddCatController.php';
+    require 'src/Controller/MovieController.php';
+    require 'src/Model/Model.php';
+    require 'src/Data/DatabaseHandler.php';
 
     $youAreHere = filter_input(INPUT_GET, "page");
 
