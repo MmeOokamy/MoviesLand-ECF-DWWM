@@ -27,6 +27,14 @@ class Model
 
     public function addMovie($name, $url, $date, $category)
     {
+            if (session_status() !== PHP_SESSION_ACTIVE){
+                session_start();
+            }
+
+            if(!array_key_exists('token', $_SESSION)){
+                $_SESSION['token'] = md5(uniqid(session_id(), true));
+            }
+
 
         try {
 
